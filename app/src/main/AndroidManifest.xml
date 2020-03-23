@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.twoactivities">
+    package="com.example.twoactivitiesandstate">
 
     <application
         android:allowBackup="true"
@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SecondActivity"
+        <activity android:name="com.example.twoactivitiesandstate.SecondActivity"
             android:label = "@string/activity2_name"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName="com.example.twoactivitiesandstate.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=
-                    "com.example.twoactivities.MainActivity" />
+                    "com.example.twoactivitiesandstate.MainActivity" />
         </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.twoactivitiesandstate.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
